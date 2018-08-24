@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package practicauno;
 
-/**
- *
- * @author EQUIPO
- */
-public class tvAbstracta {
-    
+public abstract class tvAbstracta {
+    public abstract void calidadImagen();
+}
+
+class tvs extends absTV {
+    void calidadImagen(){
+        System.out.print("Calidad de la imagen: ");
+    }
+    public static void main(String args[]){  
+    absTV tel = new tvs();  
+    tel.calidadImagen();
+    }  
 }
